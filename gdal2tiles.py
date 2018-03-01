@@ -735,8 +735,8 @@ gdal_vrtmerge.py -o merged.vrt %s""" % " ".join(self.args))
                      help="Generate aux.xml files.")
         g.add_option("-f", "--format", dest="output_format",
                      help="Image format for output tiles. Just PNG and JPEG allowed. PNG is selected by default")
-
-        g.add_option("-oc", "--output_cache", dest="output_cache",
+        
+        g.add_option("-l", "--output_cache", dest="output_cache",
                      help="Format for output cache. Values allowed are tms and xyz, being xyz the default value")
         p.add_option_group(g)
 
